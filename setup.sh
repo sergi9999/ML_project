@@ -1,7 +1,7 @@
-echo "# ML_project" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M master
-git remote add origin https://github.com/sergi9999/ML_project.git
-git push -u origin master
+mkdir -p ~/.streamlit/
+echo "[server]"  >> ~/.streamlit/config.toml
+echo "headless = true"  >> ~/.streamlit/config.toml
+echo "port = $PORT"  >> ~/.streamlit/config.toml
+echo "enableCORS = false"  >> ~/.streamlit/config.toml
+echo "[global]"  >> ~/.streamlit/config.toml
+echo "developmentMode = false"  >> ~/.streamlit/config.toml
